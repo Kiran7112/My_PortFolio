@@ -96,19 +96,19 @@ const Experience = () => {
         visible: { 
             opacity: 1,
             transition: { 
-                duration: 0.6,
+                duration: 0.4,
                 when: "beforeChildren",
-                staggerChildren: 0.2
+                staggerChildren: 0.15
             }
         }
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 0, y: 15 },
         visible: { 
             opacity: 1, 
             y: 0,
-            transition: { duration: 0.5 }
+            transition: { duration: 0.3 }
         }
     };
 
@@ -117,7 +117,7 @@ const Experience = () => {
             id='experience'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.15 }}
             variants={containerVariants}
         >
             <Wrapper variants={containerVariants}>

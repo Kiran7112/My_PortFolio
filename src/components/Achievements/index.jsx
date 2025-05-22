@@ -329,66 +329,66 @@ const Achievements = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.4,
         when: 'beforeChildren',
-        staggerChildren: 0.3,
+        staggerChildren: 0.15,
       },
     },
   };
 
   const titleVariants = {
-    hidden: { opacity: 0, y: -20 },
+    hidden: { opacity: 0, y: -10 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.3,
         ease: 'easeOut',
       },
     },
   };
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.4,
         ease: 'easeOut',
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, x: -10 },
+    hidden: { opacity: 0, x: -5 },
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.4 },
+      transition: { duration: 0.3 },
     },
   };
 
   const imageVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, scale: 0.9 },
     visible: {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: 'easeOut',
       },
     },
   };
 
   const badgeVariants = {
-    hidden: { opacity: 0, y: -20 },
+    hidden: { opacity: 0, y: -10 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
-        delay: 0.2,
+        duration: 0.3,
+        delay: 0.1,
         ease: 'easeOut',
       },
     },
@@ -399,7 +399,7 @@ const Achievements = () => {
       id="achievements"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.15 }}
       variants={containerVariants}
     >
       <Wrapper variants={containerVariants}>

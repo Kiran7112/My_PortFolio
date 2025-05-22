@@ -37,11 +37,11 @@ const StyledSection = styled(motion.div)`
 
 // Animation variants
 const fadeInUp = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 20 },
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 0.8, ease: "easeOut" } 
+    transition: { duration: 0.4, ease: "easeOut" } 
   }
 };
 
@@ -50,7 +50,7 @@ const staggerContainer = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.3
+      staggerChildren: 0.15
     }
   }
 };
@@ -81,32 +81,31 @@ function App()
             <Wrapper
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.25 }}
             >
               <StyledSection
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: false, amount: 0.25 }}
               >
                 <Skills />
               </StyledSection>
-              <br />
               <br />
             </Wrapper>
             
             <Wrapper
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.25 }}
             >
               <StyledSection
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: false, amount: 0.25 }}
               >
                 <Experience />
               </StyledSection>
@@ -116,67 +115,93 @@ function App()
             <Wrapper
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.25 }}
             >
               <StyledSection
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: false, amount: 0.25 }}
               >
                 <Certifications />
               </StyledSection>
-              <StyledSection
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }}
-              >
-                <Achievements />
-              </StyledSection>
-              <br />
               <br />
             </Wrapper>
-            
-            <StyledSection
-              variants={fadeInUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.1 }}
-            >
-              <Projects openModal={openModal} setOpenModal={setOpenModal} />
-            </StyledSection>
             
             <Wrapper
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.25 }}
             >
               <StyledSection
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: false, amount: 0.25 }}
               >
-                <Education />
+                <Achievements />
               </StyledSection>
+              <br />
+            </Wrapper>
+            
+            <Wrapper
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.25 }}
+            >
               <StyledSection
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: false, amount: 0.25 }}
+              >
+                <Projects openModal={openModal} setOpenModal={setOpenModal} />
+              </StyledSection>
+              <br />
+            </Wrapper>
+            
+            <Wrapper
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.25 }}
+            >
+              <StyledSection
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.25 }}
+              >
+                <Education />
+              </StyledSection>
+              <br />
+            </Wrapper>
+            
+            <Wrapper
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.25 }}
+            >
+              <StyledSection
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.25 }}
               >
                 <Contact />
               </StyledSection>
+              <br />
             </Wrapper>
             
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.25 }}
             >
               <Footer />
             </motion.div>
