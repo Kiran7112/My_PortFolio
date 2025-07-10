@@ -29,7 +29,7 @@ export const experiences = [
         img: "https://theelefit.com/cdn/shop/files/freepik_br_3e6ca94d-018d-4329-8cd3-828c77c68075_1.svg?v=1737707946&width=700", // Replace with the actual logo URL if available
         role: "Full Stack Developer",
         company: "The EleFit Store",
-        date: "2025 - Present",
+        date: "Nov 2024 - Present",
         desc: "Working as a Full Stack Developer at EleFit, a fitness eCommerce platform. Developed an AI fitness coach using GPT-4, Flask, and Firebase. Built and deployed RESTful APIs on AWS EC2 using Docker, created a Shopify-embedded React.js frontend, and integrated Alexa Skills with OAuth 2.0 for voice-based interaction. Focused on cloud infrastructure, DevOps (CI/CD), and user experience.",
         doc: "", // Add link to a proof/certificate if available
     }    
